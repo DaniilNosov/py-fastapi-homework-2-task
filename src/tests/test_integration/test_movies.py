@@ -369,7 +369,7 @@ async def test_create_movie_and_related_models(client, db_session):
         "status": "Released",
         "budget": 1000000.00,
         "revenue": 5000000.00,
-        "country": "US",
+        "country": "USA",
         "genres": ["Action", "Adventure"],
         "actors": ["John Doe", "Jane Doe"],
         "languages": ["English", "French"]
@@ -427,7 +427,7 @@ async def test_create_movie_duplicate_error(client, db_session, seed_database):
         "status": "Released",
         "budget": 2000000.00,
         "revenue": 8000000.00,
-        "country": "US",
+        "country": "USA",
         "genres": ["Drama"],
         "actors": ["New Actor"],
         "languages": ["Spanish"]
