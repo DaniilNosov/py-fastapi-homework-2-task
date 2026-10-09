@@ -78,7 +78,7 @@ class MovieCreateSchema(BaseModel):
     status: MovieStatusEnum
     budget: float = Field(ge=0)
     revenue: float = Field(ge=0)
-    country: str = Field(min_length=1, max_length=3)
+    country: str = Field(pattern=r"^[A-Z]{3}$")
     genres: list[str]
     actors: list[str]
     languages: list[str]
